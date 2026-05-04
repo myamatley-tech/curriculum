@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Maria Fornari – Process & Administrative Optimizer. Porto ordine dove serve davvero. Amministrazione, termosanitario, workflow optimization.">
+<title>Maria Fornari | Operational Problem Solver</title>
+
+<!-- Schema.org markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Maria Fornari",
+  "jobTitle": "Process & Administrative Optimizer",
+  "knowsAbout": [
+    "Amministrazione",
+    "Settore Termosanitario",
+    "Pratiche ACI",
+    "Digital Transformation",
+    "Workflow Optimization",
+    "Danea Easyfatt"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair Display:ital,wght@0,500;0,600;0,700;0,900;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --cocoa: #fef3e8;
+    --peach: #fee2d4;
+    --terracotta: #cd7a5a;
+    --terracotta-dark: #b55a3c;
+    --honey: #e6b17e;
+    --amber-glow: #f2bc7b;
+    --sand: #e0cfbf;
+    --warm-stone: #8b6f54;
+    --charcoal-warm: #2b241f;
+    --border-warm: #efddce;
+    --shadow-warm: 0 12px 24px -12px rgba(139, 111, 84, 0.15);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cocoa);
+    color: var(--charcoal-warm);
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: var(--charcoal-warm);
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2.5rem;
+    background: rgba(254, 243, 232, 0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-warm);
+  }
+
+  .nav-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--charcoal-warm);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--warm-stone);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover {
+    color: var(--terracotta);
+  }
+
+  #hero {
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    padding: 8rem 2.5rem 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+
+  .hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.1;
+    font-weight: 900;
+    margin-bottom: 1.6rem;
+    color: var(--charcoal-warm);
+  }
+
+  .hero-text h1 em {
+    font-style: italic;
+    background: linear-gradient(135deg, var(--terracotta), #e29b6e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .hero-text p {
+    font-size: 1.05rem;
+    color: var(--warm-stone);
+    max-width: 42ch;
+    margin-bottom: 2.4rem;
+    line-height: 1.7;
+  }
+
+  .hero-cta {
+    display: inline-block;
+    background: var(--terracotta);
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    transition: all 0.25s ease;
+    border-radius: 40px;
+    box-shadow: 0 2px 8px rgba(205, 122, 90, 0.2);
+  }
+
+  .hero-cta:hover {
+    background: var(--terracotta-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px -12px rgba(205, 122, 90, 0.4);
+  }
+
+  .hero-aside {
+    border-left: 2px solid var(--border-warm);
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: var(--terracotta);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--warm-stone);
+    margin-top: 0.4rem;
+  }
+
+  .stat-highlight {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--terracotta);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .stat-divider {
+    width: 2rem;
+    height: 2px;
+    background: var(--border-warm);
+  }
+
+  #prova {
+    background: var(--peach);
+    max-width: 100%;
+    border-top: 1px solid var(--border-warm);
+    border-bottom: 1px solid var(--border-warm);
+  }
+
+  #prova .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .proof-card {
+    background: #fffaf5;
+    border: 1px solid var(--border-warm);
+    padding: 2rem;
+    position: relative;
+    box-shadow: var(--shadow-warm);
+    border-radius: 24px;
+  }
+
+  .proof-card::before {
+    content: '"';
+    font-family: 'Playfair Display', serif;
+    font-size: 5.6rem;
+    color: var(--terracotta);
+    line-height: 1;
+    position: absolute;
+    top: -0.8rem;
+    left: 1.5rem;
+    opacity: 0.12;
+    pointer-events: none;
+  }
+
+  .proof-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--warm-stone);
+    margin-bottom: 1rem;
+  }
+
+  .proof-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 30px;
+  }
+
+  .tag-before {
+    background: #f0e2d4;
+    color: var(--warm-stone);
+  }
+
+  .tag-after {
+    background: #fae7dc;
+    color: var(--terracotta);
+  }
+
+  .proof-before,
+  .proof-after {
+    margin: 0.8rem 0 1.2rem;
+    padding-left: 1rem;
+    border-left: 3px solid;
+  }
+
+  .proof-before {
+    border-color: var(--sand);
+    color: var(--warm-stone);
+    font-size: 0.92rem;
+  }
+
+  .proof-after {
+    border-color: var(--terracotta);
+    color: var(--charcoal-warm);
+    font-weight: 500;
+    font-size: 0.94rem;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--border-warm);
+    margin-top: 2.5rem;
+    border-radius: 32px;
+    overflow: hidden;
+    background: #fffbf7;
+  }
+
+  .skill-item {
+    padding: 2rem 1.8rem;
+    border-right: 1px solid var(--border-warm);
+    border-bottom: 1px solid var(--border-warm);
+    transition: all 0.25s ease;
+    background: #fffbf7;
+  }
+
+  .skill-item:hover {
+    background: #fff3ea;
+    transform: translateY(-2px);
+  }
+
+  .skill-item:nth-child(3n) { border-right: none; }
+  .skill-item:nth-child(n+4) { border-bottom: none; }
+
+  .skill-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #eedbcb;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .skill-name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--charcoal-warm);
+  }
+
+  .skill-desc {
+    font-size: 0.85rem;
+    color: var(--warm-stone);
+    line-height: 1.55;
+  }
+
+  .approach-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.4rem 0;
+    border-bottom: 1px solid var(--border-warm);
+  }
+
+  .step:last-child { border-bottom: none; }
+
+  .step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--terracotta);
+    line-height: 1;
+    min-width: 2rem;
+  }
+
+  .step-content h3 {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+    color: var(--charcoal-warm);
+  }
+
+  .step-content p {
+    font-size: 0.85rem;
+    color: var(--warm-stone);
+  }
+
+  .approach-quote {
+    background: #f7e4d4;
+    color: var(--charcoal-warm);
+    padding: 3rem 2.5rem;
+    border-radius: 28px;
+    box-shadow: var(--shadow-warm);
+    border: 1px solid var(--border-warm);
+  }
+
+  .approach-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.45rem;
+    font-style: italic;
+    line-height: 1.45;
+    margin-bottom: 1.5rem;
+    color: #2b241f;
+  }
+
+  .approach-quote cite {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  #contatti {
+    background: #2c241e;
+    max-width: 100%;
+    color: #fcf3ea;
+  }
+
+  #contatti .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  #contatti .section-label { color: var(--honey); }
+  #contatti .section-title { color: #fff4ea; }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .contact-item span:first-child {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--amber-glow);
+    font-weight: 600;
+  }
+
+  .contact-item a,
+  .contact-item span:last-child {
+    font-size: 0.95rem;
+    color: #fdebd8;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+  }
+
+  .contact-item a:hover {
+    opacity: 1;
+    text-decoration: underline;
+    color: #fff0e2;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .form-field label {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--amber-glow);
+    font-weight: 600;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    background: rgba(255, 240, 226, 0.08);
+    border: 1px solid rgba(230, 177, 126, 0.3);
+    color: #fff0e4;
+    padding: 0.85rem 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    outline: none;
+    transition: all 0.2s;
+    width: 100%;
+    border-radius: 18px;
+  }
+
+  .form-field input:focus,
+  .form-field textarea:focus {
+    border-color: var(--honey);
+    background: rgba(255, 240, 226, 0.12);
+  }
+
+  .form-field textarea {
+    min-height: 120px;
+    resize: vertical;
+    border-radius: 20px;
+  }
+
+  .form-privacy {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    font-size: 0.75rem;
+    color: rgba(255, 235, 215, 0.7);
+  }
+
+  .form-privacy input {
+    margin-top: 0.2rem;
+    accent-color: var(--terracotta);
+  }
+
+  .btn-submit {
+    background: var(--terracotta);
+    color: white;
+    border: none;
+    padding: 0.85rem 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s;
+    align-self: flex-start;
+    border-radius: 44px;
+  }
+
+  .btn-submit:hover {
+    background: var(--terracotta-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px -8px rgba(205, 122, 90, 0.5);
+  }
+
+  footer {
+    background: #1f1914;
+    color: rgba(245, 220, 195, 0.45);
+    text-align: center;
+    padding: 1.7rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    border-top: 1px solid #3d3228;
+  }
+
+  @keyframes fadeWarm {
+    0% { opacity: 0; transform: translateY(22px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .hero-text h1 { animation: fadeWarm 0.7s ease both; }
+  .hero-text p { animation: fadeWarm 0.7s 0.15s ease both; }
+  .hero-cta { animation: fadeWarm 0.7s 0.3s ease both; }
+  .hero-aside { animation: fadeWarm 0.7s 0.45s ease both; }
+
+  @media (max-width: 780px) {
+    nav { padding: 0.9rem 1.5rem; }
+    .nav-links { display: none; }
+    #hero {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      padding: 6rem 1.5rem 3rem;
+    }
+    .hero-aside {
+      border-left: none;
+      border-top: 2px solid var(--border-warm);
+      padding-left: 0;
+      padding-top: 2rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+    }
+    .stat-divider { display: none; }
+    section { padding: 4rem 1.5rem; }
+    #prova .inner {
+      grid-template-columns: 1fr;
+      padding: 3.5rem 1.5rem;
+    }
+    .skills-grid { grid-template-columns: 1fr; border-radius: 24px; }
+    .skill-item { border-right: none; }
+    .skill-item:nth-child(n) { border-bottom: 1px solid var(--border-warm); }
+    .approach-grid { grid-template-columns: 1fr; gap: 2rem; }
+    #contatti .inner { grid-template-columns: 1fr; padding: 3.5rem 1.5rem; gap: 3rem; }
+    .btn-submit, .hero-cta { width: 100%; text-align: center; }
+    .stat-highlight { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav aria-label="Navigazione principale">
+  <a href="#hero" class="nav-name">Maria Fornari</a>
+  <ul class="nav-links">
+    <li><a href="#prova">Risultati</a></li>
+    <li><a href="#competenze">Competenze</a></li>
+    <li><a href="#approccio">Approccio</a></li>
+    <li><a href="#contatti">Contatti</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-text">
+    <p class="section-label">Operational Problem Solver</p>
+    <h1>
+      Porto ordine<br>
+      dove serve <em>davvero.</em>
+    </h1>
+    <p>
+      Se la tua azienda è lenta, disorganizzata o il lavoro non scorre bene, entro e rimetto ordine. Con esperienza reale, non con teoria.
+    </p>
+    <a href="#contatti" class="hero-cta">Parliamone →</a>
+  </div>
+  <div class="hero-aside">
+    <div class="stat">
+      <span class="stat-number">20+</span>
+      <span class="stat-label">Anni di esperienza operativa</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-highlight">Settori trasversali</span>
+      <span class="stat-label">Esperienza in molteplici ambiti</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-number">0</span>
+      <span class="stat-label">Soluzioni teoriche</span>
+    </div>
+  </div>
+</section>
+
+<div id="prova">
+  <div class="inner">
+    <div>
+      <p class="section-label">Prova concreta</p>
+      <h2 class="section-title">Non parole. Risultati.</h2>
+      <p style="font-size:0.88rem; color:var(--warm-stone);">Trasformazioni documentate. Un caso reale tra i tanti: azienda nel settore autoriparazioni.</p>
+    </div>
+    <div class="proof-card">
+      <p class="proof-label">Settore autoriparazioni</p>
+      <span class="proof-tag tag-before">Prima</span>
+      <div class="proof-before">
+        Gestione cartacea, informazioni disperse. Le persone erano brave, ma senza una metodologia su misura regnava la confusione: tempi persi, cose che sfuggivano, nessuna armonia nel lavoro.
+      </div>
+      <span class="proof-tag tag-after">Dopo</span>
+      <div class="proof-after">
+        Sistema digitale strutturato. Meno errori, più velocità, controllo operativo reale. Tempi di risposta ridotti del 40% e armonia nei flussi quotidiani.
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="competenze">
+  <p class="section-label">Aree di competenza</p>
+  <h2 class="section-title">Ogni lavoro mi ha insegnato a risolvere problemi. Ecco cosa so fare.</h2>
+  <div class="skills-grid">
+    <div class="skill-item"><div class="skill-num">01</div><div class="skill-name">Amministrazione completa</div><div class="skill-desc">Contabilità, gestione banche, relazione con clienti e fornitori. Flussi gestiti in piena autonomia.</div></div>
+    <div class="skill-item"><div class="skill-num">02</div><div class="skill-name">Settore termosanitario</div><div class="skill-desc">Preventivi, ordini, gestione operativa. Gestione calendario manutenzioni, programmazione interventi, aggiornamento libretti e compilazione dichiarazioni di conformità.</div></div>
+    <div class="skill-item"><div class="skill-num">03</div><div class="skill-name">Pratiche ACI</div><div class="skill-desc">Gestione completa di pratiche automobilistiche anche complesse. Zero nodi burocratici non risolti.</div></div>
+    <div class="skill-item"><div class="skill-num">04</div><div class="skill-name">Digital Transformation</div><div class="skill-desc">Da carta a digitale. Analisi dei flussi reali e implementazione di sistemi che funzionano davvero.</div></div>
+    <div class="skill-item"><div class="skill-num">05</div><div class="skill-name">Workflow Optimization</div><div class="skill-desc">Elimino i passaggi inutili. Costruisco processi chiari, ripetibili e controllabili da chiunque.</div></div>
+    <div class="skill-item"><div class="skill-num">06</div><div class="skill-name">Danea Easyfatt</div><div class="skill-desc">Utilizzo avanzato del gestionale. Configurazione, formazione e ottimizzazione per il team.</div></div>
+  </div>
+</section>
+
+<section id="approccio">
+  <div class="approach-grid">
+    <div>
+      <p class="section-label">Il mio metodo</p>
+      <h2 class="section-title">Come lavoro.</h2>
+      <div class="approach-steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content"><h3>Analisi reale</h3><p>Guardo i flussi così come sono, non come dovrebbero essere. Senza filtri.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><h3>Eliminazione delle inefficienze</h3><p>Individuo dove si perde tempo e perché. Poi elimino quei punti, uno per uno.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><h3>Sistema funzionante</h3><p>Costruisco processi che reggono anche quando non ci sono io. Questo è il vero risultato.</p></div></div>
+      </div>
+    </div>
+    <div class="approach-quote">
+      <p>Un buon sistema rende le persone più efficaci, non le sostituisce.</p>
+      <cite>— Maria Fornari</cite>
+    </div>
+  </div>
+</section>
+
+<div id="contatti">
+  <div class="inner">
+    <div>
+      <p class="section-label">Contatti</p>
+      <h2 class="section-title">Se cerchi qualcuno che faccia funzionare le cose.</h2>
+      <p style="font-size:0.9rem; opacity:0.8; margin-bottom:2rem;">Capisco velocemente dove intervenire. Scrivimi e ne parliamo.</p>
+      <div class="contact-info">
+        <div class="contact-item"><span>Email</span><a href="mailto:maria.fornari@email.com">maria.fornari@email.com</a></div>
+        <div class="contact-item"><span>LinkedIn</span><a href="https://linkedin.com/in/mariafornari" target="_blank" rel="noopener">linkedin.com/in/mariafornari</a></div>
+        <div class="contact-item"><span>Disponibilità</span><span>Aperta a colloqui · remoto e presenza</span></div>
+      </div>
+    </div>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="contact" />
+      <p hidden><label>Non compilare: <input name="bot-field" /></label></p>
+      <div class="form-field"><label for="name">Nome e Cognome</label><input type="text" id="name" name="name" placeholder="Es. Luca Bianchi" required></div>
+      <div class="form-field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="la-tua@email.com" required></div>
+      <div class="form-field"><label for="azienda">Azienda (opzionale)</label><input type="text" id="azienda" name="azienda" placeholder="Nome azienda"></div>
+      <div class="form-field"><label for="message">Descrivi la situazione</label><textarea id="message" name="message" placeholder="Cosa non funziona nella tua azienda? Anche in poche righe. Ti risponderò con calore e concretezza." required></textarea></div>
+      <label class="form-privacy">
+        <input type="checkbox" required>
+        Acconsento al trattamento dei dati personali (leggi l'<a href="#" style="color: var(--amber-glow); text-decoration: underline;">informativa privacy</a>)
+      </label>
+      <button type="submit" class="btn-submit">Invia messaggio →</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  © 2025 Maria Fornari · Operational Problem Solver · Con chiarezza, calore e risultati concreti
+</footer>
+</body>
+</html>
